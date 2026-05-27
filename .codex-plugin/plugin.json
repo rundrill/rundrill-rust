@@ -1,0 +1,33 @@
+{
+  "name": "rundrill-rust",
+  "version": "0.1.0",
+  "description": "Rust coach — get over the ownership wall by reading, tracing, and reviewing code (incl. AI-generated), with drills, progress, and mistake memory, inside your AI agent.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com",
+    "url": "https://rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "repository": "https://github.com/rundrill/rundrill-rust",
+  "license": "CC-BY-NC-ND-4.0",
+  "keywords": ["rundrill", "course", "coach", "drills", "rust", "ownership", "code-review"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "RunDrill Rust",
+    "shortDescription": "Rust coach: ownership, the compiler-as-teacher, read & review code.",
+    "longDescription": "An interactive Rust coach for the AI era: read-the-compiler-error and ownership-trace drills, predict-and-trace, and a signature 'review the AI's code' drill — built to get you over the ownership wall, backed by the RunDrill MCP engine with progress tracking and mistake memory.",
+    "developerName": "RunDrill",
+    "category": "Education",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://rundrill.com",
+    "defaultPrompt": [
+      "Start a Rust drill session.",
+      "Walk me through an ownership trace.",
+      "Review some AI-written Rust and let me find the bug."
+    ],
+    "brandColor": "#3B7AE0",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}
