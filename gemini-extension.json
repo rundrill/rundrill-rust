@@ -1,0 +1,17 @@
+{
+  "name": "rundrill-rust",
+  "version": "0.1.1",
+  "description": "Rust coach — get over the ownership wall by reading, tracing, and reviewing code (incl. AI-generated), with drills, progress, and mistake memory, inside your AI agent.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com",
+    "url": "https://rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "license": "CC-BY-NC-ND-4.0",
+  "mcpServers": {
+    "rundrill-rust": {
+      "serverURL": "https://mcp.rundrill.com/prog/rust"
+    }
+  }
+}
