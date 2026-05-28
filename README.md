@@ -24,19 +24,20 @@ manifest and ignores the rest.
 | OpenAI Codex | `.codex-plugin/plugin.json` + `.mcp.json` |
 | Google Antigravity | `plugin.json` + `mcp_config.json` (+ `rules/`) |
 
-The MCP endpoint is `https://mcp.rundrill.com/prog` — the programming-course host that Rust and Python
-share, passing `language: "rust"`. On first use the host opens a browser tab for the OAuth handshake,
-then closes it — no API key to paste.
+The MCP endpoint is `https://mcp.rundrill.com/prog/rust` — the programming-course host, passing
+`language: "rust"`. The server routes on the `/prog` segment and ignores the course name; the name
+makes Rust register as its own MCP server in your agent. On first use the host opens a browser tab for
+the OAuth handshake, then closes it — no API key to paste.
 
 ## Install
 
 - **Claude Code / Desktop** — via the RunDrill marketplace:
   ```
-  /plugin marketplace add rundrill/marketplace
+  /plugin marketplace add rundrill/rundrill
   /plugin install rundrill-rust@rundrill
   ```
   Then run `/rust-coach`.
-- **OpenAI Codex** — `codex plugin marketplace add rundrill/marketplace`, then install `rundrill-rust`.
+- **OpenAI Codex** — `codex plugin marketplace add rundrill/rundrill`, then install `rundrill-rust`.
 - **Google Antigravity** — drop this folder into `~/.gemini/config/plugins/rundrill-rust/` (global)
   or `<workspace>/.agents/plugins/rundrill-rust/` (workspace-scoped).
 
