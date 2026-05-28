@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "rundrill-rust": {
+      "serverURL": "https://mcp.rundrill.com/prog/rust",
       "serverUrl": "https://mcp.rundrill.com/prog/rust"
     }
   }
